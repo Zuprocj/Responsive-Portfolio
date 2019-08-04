@@ -3,7 +3,7 @@ body {
   font-size: 18px;
   line-height: 34px;
   color: #777777;
-  background: url("../images/concrete_seamless.png");
+  background: url("../images/concrete_seamless.png"););
 }
 
 * {
@@ -168,14 +168,6 @@ h3, h2 {
   border-bottom: 0;
 }
 
-.auth-image {
-  float: left;
-  width: 200px;
-  height: auto;
-  margin-top: 10px;
-  margin-right: 25px;
-}
-
 /* contact page */
 
 #contact-form ul {
@@ -216,20 +208,95 @@ input[type=submit] {
   border: 0 none;
 }
 
-/* screen size 980px */
+/* media querry */
 
-@media only screen and (max-width: 980px) {
+@media screen and (max-width: max-width) {
+
+}
+
+@media screen and (max-width: 980px) {
+  .left {
+    max-width: 75%;
+    padding: 0px 15px 10px 0px;
+    height: auto;
+    width: auto\9; 
+    float: left;
+  }
+  .main-section {
+    width: auto;
+    max-width: 968px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .left {
+    max-width: 50%;
+    height: auto;
+    padding: 0px 15px 10px 0px;
+    width: auto\9; 
+    float: left;
+  }
+  .work h3 {
+    position: absolute;
+    width: auto;
+    height: auto;
+  }
+  #masthead {
+    position: static;
+    max-width: 100%;
+    height: auto;
+    width: auto\9;
+  }
+
+@media screen and (max-width: 640px) {
+
+  .left {
+    max-width: 100%;
+    height: auto;
+    width: auto\9; 
+    float: both;
+
+  }
+  .work img {
+    width: 100%;
+  }
+  .work h3 {
+    position: absolute;
+    width: auto;
+    height: auto;
+  }
+  .work {
+    position: relative;
+    float: both;
+    }
+
+  #masthead {
+    position: static;
+    max-width: 100%;
+    height: auto;
+    width: auto\9;
+  }
+  .main-section {
+    width: auto;
+    max-width: 640px;
+  }
   
+
+  /* trying to center the nav bar but it is not budging from the right */
+  /* nav {
+    text-align: center; 
+  }
+  nav a {
+    text-align: center;
+  }
+  nav a:first-child {
+    text-align: center;
+  } */
+
+  #logo {
+  float: both;
+  width: 640px;
+  height: auto;
+  text-align: center;
+  }
 }
-
-@media only screen and (max-width: 768) {
-
-}
-
-@media only screen and (max-width: 640px) {
-  /* test color
-  body {
-    background-color: lightblue; */
-
-}
-
